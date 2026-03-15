@@ -25,3 +25,25 @@ let car2 ={
 console.log(car2);
 
 console.log(car2.start());
+
+
+
+// exercise 10  arrays of objects
+
+let library=[
+    {
+        title:'the art of war',
+        author:'sun tzu',
+        year:1703,
+    },
+
+    {
+        title:'carol dweck',
+        author:'mindset',
+        year:1920,
+    },
+
+]
+
+console.log(library[0].title);
+console.log(library[1].author);
