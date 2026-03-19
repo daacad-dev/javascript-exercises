@@ -15,3 +15,11 @@ let fruit = ['apple', 'banana', 'cherry', 'mango', 'watermelon'];
 
 let fruits = fruit.map(frut => frut.length);
     console.log(fruits);
+
+
+ // exercise 21 reduce
+ 
+ let numbers = [1,2,3,4,5];
+
+ let result = numbers.reduce((total , num) => total * num, 1);
+    console.log(result);
