@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 32 selecting DOM</title>
+</head>
+<body>
+    <h1>welcome to mogadishu</h1>
+
+    <div class="text">mogadishu is a capital of somalia</div>
+    <p class="text">mogadishu is a beautiful city</p>
+
+    <script>
+        let greet = document.querySelector('h1');
+            console.log(greet);
+
+        let texts = document.querySelectorAll('.text')[1];
+            console.log(texts);    
+    </script>
+</body>
+</html>
