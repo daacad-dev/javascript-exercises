@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <!-- change attributes & style -->
+
+    <img id="image" src="" alt="">
+
+    <button onclick="addImage()">add image</button>
+
+    <script>
+
+        function addImage() {
+
+        let image = document.querySelector('#image');
+
+        let url = prompt('enter yuor image url');
+        let borderColor = prompt('enter your border color');
+        let widths = prompt('enter your width');
+        let heights = prompt('enter your height');
+        let borderRadius = prompt('enter your border radius');
+        
+        image.setAttribute('src', url);
+        image.style.border=` 3px solid ${borderColor} `;
+        image.style.width=` ${widths}px`;
+        image.style.height=` ${heights}px`;
+        image.style.borderRadius=` ${borderRadius}px`;
+        image.style.padding='15px';
+        image.style.backgroundColor='skyblue';
+
+        }
+    </script>
+</body>
+</html>
