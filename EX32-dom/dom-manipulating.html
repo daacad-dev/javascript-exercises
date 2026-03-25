@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulating</title>
+</head>
+<body>
+    <!-- exercise 33 DOM manipulating -->
+
+    <h1 id="content">Hello, world!</h1>
+    <h2 id="text">welcome to DOM</h2>
+
+
+     <button onclick="changeContent()"> header one is change</button>
+     <button onclick="changeinnerHTML()"> header two is change</button>
+
+    <script>
+
+        let con = document.querySelector('#content');
+        let texts = document.querySelector('#text');
+
+
+        function changeContent() {
+         con.textContent='Hi all people in world you read WW3';
+        }
+
+
+         function changeinnerHTML() {
+          texts.innerHTML='dom manipulating is <i> a dynamic programming </i> '
+        }
+
+    </script>
+</body>
+</html>
