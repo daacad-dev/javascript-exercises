@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <!-- exercise 34 add & remove dom-->
+
+    <ul class="list">
+        <li>Item one</li>
+        <li>Item two</li>
+    </ul>
+    
+    <button onclick="add()">Add New Item</button>
+    <button onclick="remove()">Delete New Item</button>
+
+
+
+    <script>
+        
+      let lists = document.querySelector('.list');
+
+
+      function add() {
+
+        let newItem = document.createElement('li');
+
+        newItem.textContent = 'Item three';
+
+
+        lists.appendChild(newItem);
+
+      }
+
+
+     function remove() {
+    
+       if(lists.lastChild){
+
+         lists.removeChild(lists.lastChild);
+
+      }else{
+        alert('you can not ltem removed');
+      }
+
+     }
+    </script>
+    
+</body>
+</html>
